@@ -9,7 +9,5 @@ public interface BeneficiarioRepository extends CrudRepository<Beneficiario, Lon
 
     List<Beneficiario> findAll();
 
-    Beneficiario findOne(Long id);
-
     Beneficiario save(Beneficiario beneficiario);
 }
