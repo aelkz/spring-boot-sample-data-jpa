@@ -23,6 +23,7 @@ public class MainController {
     @Autowired
     private BeneficiarioService beneficiarioService;
 
+    // for testing purposes only (remove this).
     @Autowired
     private BeneficiarioRepository beneficiarioRepository;
 
