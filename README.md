@@ -18,10 +18,18 @@ docker pull wnameless/oracle-xe-11g
 
 # start oracle-xe
 docker run -d -p 49161:1521 -e ORACLE_ALLOW_REMOTE=true wnameless/oracle-xe-11g
+
+# Default configuration (see appendix A)
 port: 49161
 sid: xe
 username: system
 password: oracle
+
+# Application configuration (see appendix A)
+port: 49161
+sid: xe
+username: convenio
+password: convenio
 
 mvn spring-boot:run
 ```
